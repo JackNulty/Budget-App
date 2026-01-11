@@ -1,22 +1,28 @@
 class Expense:
-    def __init__(self, t_payer, t_amount, t_category, t_date, t_description=""):
-        self.payer = t_payer
-        self.amount = t_amount
-        self.category = t_category
-        self.date = t_date
-        self.description = t_description
+    def __init__(self, payer, amount, category, date, description=""):
+        self.payer = payer
+        self.amount = amount
+        self.category = category
+        self.date = date
+        self.description = description
     
     def to_dict(self):
-        return self.__dict__
+        return {
+            "payer": self.payer,
+            "amount": self.amount,
+            "category": self.category,
+            "date": self.date,
+            "description": self.description
+        }
     
 class Budget:
-    def __init__(self, t_monthlyBudget):
-        self.monthlyBudget = t_monthlyBudget
+    def __init__(self, monthlyBudget):
+        self.monthlyBudget = monthlyBudget
         self.expenses = []
 
-    def addExpense(self, t_expense):
-        self.expenses.append(t_expense)
-
+    def addExpense(self, expense):
+        self.expenses.append(expense)
+        
     def totalSpent(self):
         return sum(expense.amount for expense in self.expenses)
     

@@ -1,5 +1,7 @@
 import json
 
+from budget import Budget, Expense
+
 def saveBudgetToFile(t_budget, t_filename="data.json"):
     data = {
         "monthlyBudget" : t_budget.monthlyBudget,
