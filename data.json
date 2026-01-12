@@ -1,0 +1,33 @@
+{
+    "monthlyBudget": 1500,
+    "expenses": [
+        {
+            "payer": "Jack",
+            "amount": 300.0,
+            "category": "car",
+            "date": "2026-01-12",
+            "description": ""
+        },
+        {
+            "payer": "You",
+            "amount": 500.0,
+            "category": "Rent",
+            "date": "2026-01-12",
+            "description": ""
+        },
+        {
+            "payer": "You",
+            "amount": 100.0,
+            "category": "Rent",
+            "date": "2026-01-12",
+            "description": ""
+        },
+        {
+            "payer": "Bogger",
+            "amount": 200.0,
+            "category": "Rent",
+            "date": "2026-01-12",
+            "description": ""
+        }
+    ]
+}
